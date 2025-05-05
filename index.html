@@ -92,13 +92,19 @@
 
     .socials {
       margin-top: 15px;
+      display: flex;
+      gap: 20px;
     }
 
-    .socials a {
-      margin: 0 10px;
-      font-size: 2rem;
-      color: white;
-      text-decoration: none;
+    .socials a svg {
+      width: 36px;
+      height: 36px;
+      fill: white;
+      transition: transform 0.2s ease;
+    }
+
+    .socials a:hover svg {
+      transform: scale(1.1);
     }
 
     .header-subtext {
@@ -107,49 +113,6 @@
       margin-top: 10px;
       max-width: 320px;
       text-align: center;
-    }
-
-    .meme-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .meme-gallery img {
-      width: 100%;
-      max-width: 320px;
-      border-radius: 15px;
-      border: 3px solid #ffeb3b;
-      background: #000;
-      box-shadow: 4px 4px 0px #444;
-    }
-
-    .roadmap {
-      background: #111;
-      margin-top: 50px;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 4px 4px 0px #222;
-    }
-
-    .roadmap h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .roadmap ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1rem;
-      text-align: left;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .roadmap ul li {
-      margin-bottom: 15px;
     }
 
     .gallery {
@@ -178,6 +141,32 @@
       background: #000;
       box-shadow: 5px 5px 0px #444;
       object-fit: cover;
+    }
+
+    .roadmap {
+      background: #111;
+      margin-top: 50px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 4px 4px 0px #222;
+    }
+
+    .roadmap h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .roadmap ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .roadmap ul li {
+      margin-bottom: 15px;
     }
 
     footer {
@@ -234,16 +223,22 @@
       <h1>Baby Gork - $BabyGork 👶🧠</h1>
 
       <div class="ca-wrapper">
-        <div class="ca-header">CA: TBD</div>
+        <div class="ca-header">CA: 5rX6WRhezyszRDQKSAAKMHDdH83GTYeyWESrQ8AyZREV</div>
       </div>
 
       <div class="buy-wrapper">
-        <a href="#" class="buy-button">BUY NOW</a>
+        <a href="https://dexscreener.com/solana/4zmgmyqnno7vdpo1igba1n7nlwmkkz4x6dce6ycyugsr" target="_blank" class="buy-button">BUY NOW</a>
       </div>
 
       <div class="socials">
-        <a href="#" title="Telegram">📣</a>
-        <a href="#" title="Twitter">✖️</a>
+        <!-- Telegram SVG -->
+        <a href="https://t.me/babygorkrewards" title="Telegram" target="_blank">
+          <svg viewBox="0 0 240 240"><circle cx="120" cy="120" r="120" fill="#0088cc"/><path d="M180 60L60 120L100 130L110 180L140 150L180 60Z" fill="white"/></svg>
+        </a>
+        <!-- X (Twitter) SVG -->
+        <a href="https://x.com/BabyGorkRewards" title="X" target="_blank">
+          <svg viewBox="0 0 24 24"><path fill="white" d="M20.778 3H16.68l-4.698 6.677L7.286 3H3.222l6.948 9.8L3 21h4.098l5.148-7.315L17.122 21H21l-7.312-10.293L20.778 3Z"/></svg>
+        </a>
       </div>
 
       <p class="header-subtext">Simply hold $BabyGork and receive $Gork.</p>
@@ -251,14 +246,22 @@
   </div>
 </header>
 
-<!-- OPTIONAL: Meme image section -->
-<section class="meme-gallery">
-  <!-- Add meme-style images here later if needed -->
+<!-- OG Gallery BEFORE roadmap -->
+<section class="gallery">
+  <h2>🖼️ OG BabyGork Gallery</h2>
+  <div class="gallery-grid">
+    <img src="gork1.jpg" alt="OG BabyGork 1" />
+    <img src="gork2.jpg" alt="OG BabyGork 2" />
+    <img src="gork3.jpg" alt="OG BabyGork 3" />
+    <img src="gork4.jpg" alt="OG BabyGork 4" />
+    <img src="gork5.jpg" alt="OG BabyGork 5" />
+    <img src="gork6.jpg" alt="OG BabyGork 6" />
+  </div>
 </section>
 
 <!-- Roadmap -->
 <section class="roadmap">
-  <h2>🍼 $BabyGork Roadmap</h2>
+  <h2>🍼 $BabyGork Roadmap (subject to change on a whim for no reason at all)</h2>
   <ul>
     <li><strong>Q2 2025:</strong> Gork gets frisky — Baby Gork is born 👶🤖</li>
     <li><strong>Q2 2025:</strong> Auto-yield launch: Baby cries = $Gork drops 🍼💸</li>
@@ -271,21 +274,8 @@
   </ul>
 </section>
 
-<!-- OG Gallery -->
-<section class="gallery">
-  <h2>🖼️ OG BabyGork Gallery</h2>
-  <div class="gallery-grid">
-    <img src="photo_2025-05-04_13-52-12.jpg" alt="OG BabyGork 1" />
-    <img src="photo_2025-05-04_13-52-12.jpg" alt="OG BabyGork 2" />
-    <img src="photo_2025-05-04_13-52-12.jpg" alt="OG BabyGork 3" />
-    <img src="photo_2025-05-04_13-52-12.jpg" alt="OG BabyGork 4" />
-    <img src="photo_2025-05-04_13-52-12.jpg" alt="OG BabyGork 5" />
-    <img src="photo_2025-05-04_13-52-12.jpg" alt="OG BabyGork 6" />
-  </div>
-</section>
-
 <footer>
-  © 2025 Baby Gork | Powered by Juice Boxes & $Gork | #BabyGork
+  © 2025 Baby Gork | Powered by Juice Boxes & $Gork | #BabyGork | contact: info@babygork.com
 </footer>
 
 </body>
